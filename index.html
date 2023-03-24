@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="calculadora.css">
+</head>
+<body>
+    <div id="principal">
+        <h2 id="titulo">Calculadora 1.2</h2>
+
+        <div id="tela">
+            <input id="num" type="text"/>
+        </div>
+        <div id="botoes">
+            <input class="botao" type="button" value="1" onClick="clicou(1)"/>
+            <input class="botao" type="button" value="2" onClick="clicou(2)"/>
+            <input class="botao" type="button" value="3" onClick="clicou(3)"/>
+            <input class="botao" type="button" value="x" onClick="clicou('mul')"/>
+            <input class="botao" type="button" value="(" onClick="clicou('pA')"/>
+            <input class="botao" type="button" value=")" onClick="clicou('pF')"/>
+            <input class="botao" type="button" value="X" onClick="clicou('X')"/>
+            <input class="botao" type="button" value="4" onClick="clicou(4)"/>
+            <input class="botao" type="button" value="5" onClick="clicou(5)"/>
+            <input class="botao" type="button" value="6" onClick="clicou(6)"/>
+            <input class="botao" type="button" value="/" onClick="clicou('div')"/>
+            <input class="botao" type="button" value="sin" onClick="clicou('sin')"/>
+            <input class="botao" type="button" value="cos" onClick="clicou('cos')"/>
+            <input class="botao" type="button" value="tan" onClick="clicou('tan')"/>
+            <input class="botao" type="button" value="7" onClick="clicou(7)"/>
+            <input class="botao" type="button" value="8" onClick="clicou(8)"/>
+            <input class="botao" type="button" value="9" onClick="clicou(9)"/>
+            <input class="botao" type="button" value="%" onClick="clicou('res')"/>
+            <input class="botao" type="button" value="√" onClick="clicou('r')"/>
+            <input class="botao" type="button" value="␈" onClick="clicou('b')"/>
+            <input class="botao" type="button" value="C" onClick="clicou('C')"/>
+            <input class="botao" type="button" value="+" onClick="clicou('som')"/>
+            <input class="botao" type="button" value="0" onClick="clicou(0)"/>
+            <input class="botao" type="button" value="-" onClick="clicou('sub')"/>
+            <input class="botao" type="button" value="xⁿ" onClick="clicou('e')"/>
+            <input class="botao" type="button" value="log" onClick="clicou('log')"/>
+            <input class="botao" id="enter" type="button" value="Enter" onClick="calc()"/>
+        </div>
+        
+        <div id="telaResultado">
+            <p id="resultado"></p>
+        </div>
+    </div>
+    <script src="calculadora.js"></script>
+</body>
+</html>
